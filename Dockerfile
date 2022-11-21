@@ -6,6 +6,8 @@ COPY . .
 
 RUN yarn
 
+RUN yarn prisma migrate dev
+
 CMD yarn dev
 
 EXPOSE 8000
